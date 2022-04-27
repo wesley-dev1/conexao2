@@ -1,7 +1,7 @@
 {
   "cells": [
     {
-      "allowConfiguration": false,
+      "allowConfiguration": true,
       "angle": 0,
       "apiPath": "src/main/webapp/raml/app2/api.raml",
       "async": {
@@ -13,6 +13,7 @@
       "disableCache": false,
       "id": "paperCell",
       "namespace": "app2",
+      "persistenceProvider": "Cronapp",
       "position": {
         "x": 0,
         "y": 0
@@ -178,8 +179,8 @@
       "modelType": "Table",
       "name": "Carros",
       "position": {
-        "x": 306,
-        "y": 146
+        "x": 196,
+        "y": 130
       },
       "queries": [],
       "realName": "",
@@ -187,7 +188,7 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 118.67059326171875,
+        "height": 118.67058563232422,
         "width": 114.375
       },
       "tableName": "",
