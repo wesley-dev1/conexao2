@@ -1,0 +1,15 @@
+{
+  "name": "io.cronapp.apps.conexao",
+  "displayName": "conexao",
+  "version": "1.0.0",
+  "description": "conexao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CronApp IDE",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cronapp-framework-mobile-js": "^2.8.14"
+  }
+}

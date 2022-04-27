@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="Connect" ruleName="Connect" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
+  <metadata scale="1" scrollx="534.5" scrolly="47.19999999999999" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-487" y="-22">
+    <mutation>
+      <arg name="usuarioLogado"/>
+    </mutation>
+    <field customattributes="" name="NAME">conexaoBanco</field>
+    <comment h="80" pinned="false" w="160">Connect</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="nrNHWCQ|Qzt}a%y#(0WX" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+        <value name="TEXT">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="30uc.{mvY5[NP2zAM?#S" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">abc</field>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7-,Y%|,p1fMa#9sYwz,E" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">usuarioLogado</field>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="CD|Gp{EDl+Saa;Qq/T0z" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field customattributes="" name="VAR">conexao</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#aa2f00" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Ca/6dE{(c`r9~XgFX2Rn" multilayer="false" namespace="cronapi.database.Operations.configureConnection" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EConfigurar%20Conex%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EConfigura%20uma%20conex%C3%A3o%20JDBC%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Classe%20do%20driver%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20URL%20JDBC%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Usu%C3%A1rio%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.configureConnection%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.database.Operations.configureConnection}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Classe do driver"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="URL JDBC"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Usuário"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Senha"/>
+                </mutation>
+                <value name="ARG0">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Dl35pG#mS0jnp^;,N*dg" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">com.mysql.jdbc.Driver</field>
+                  </shadow>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="aGz|92c)+q;r=B}bsl~;" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/IBase64?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false</field>
+                  </shadow>
+                </value>
+                <value name="ARG2">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="qJO5?RE2pG59j^Lx+/BV" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">usr_db_doc</field>
+                  </shadow>
+                </value>
+                <value name="ARG3">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="G9aDXn@`_3GVN/ljlfES" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">rjfe2Vm9yQWg3R8Y</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="M,d2B*9KAA]H9lQ}Nj^M" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                <value name="IF0">
+                  <block asynccall="false" colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="sh;?h^S_g?2z1bdDpx1P" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                    <field customattributes="" name="OP">NEQ</field>
+                    <value name="A">
+                      <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=";9[mp#r!QlA8%!dcj;Qo" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field customattributes="" name="VAR">usuarioLogado</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="r(0=CIc2;0#0k-V@1aDr" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field customattributes="" name="TEXT">admin</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="}6KK*ZQ8e-vq]^kHgLhq" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field customattributes="" name="VAR">conexao</field>
+                    <value name="VALUE">
+                      <block asynccall="false" colour="#aa2f00" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T}bzFitB[H|5@hu+`7|e" multilayer="false" namespace="cronapi.database.Operations.configureConnection" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EConfigurar%20Conex%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EConfigura%20uma%20conex%C3%A3o%20JDBC%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Classe%20do%20driver%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20URL%20JDBC%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Usu%C3%A1rio%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.configureConnection%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.database.Operations.configureConnection}}" return-raw-type="cronapi.Var">
+                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Classe do driver"/>
+                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="URL JDBC"/>
+                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Usuário"/>
+                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Senha"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="exr.QB[t85455RKD~V|*" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">com.mysql.jdbc.Driver</field>
+                          </shadow>
+                        </value>
+                        <value name="ARG1">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^h`y0a5Q.v@#jhiEH%)k" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">jdbc:mysql://db-conexao2.cfdacj6pdovg.us-east-1.rds.amazonaws.com:3306/db_conexao2?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false</field>
+                          </shadow>
+                        </value>
+                        <value name="ARG2">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="~zO5Qd;i2UcCF_Z+=#q~" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">root</field>
+                          </shadow>
+                        </value>
+                        <value name="ARG3">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_3]URfV-1G5!vqyqEs;}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">pbd7fcc2319cf43b589946575001db</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",2w;o/eZwdVd-%w8=Y3Z" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field customattributes="" name="VAR">conexao</field>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",oPLtBYlk20H^TL!O(-;" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" x="188" y="-7">
+    <field customattributes="" name="BOOL">FALSE</field>
+  </block>
+  <block asynccall="false" colour="#aa2f00" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="njVl4T{?qVr7g!?vI7Z{" multilayer="false" namespace="cronapi.database.Operations.configureConnection" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EConfigurar%20Conex%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EConfigura%20uma%20conex%C3%A3o%20JDBC%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Classe%20do%20driver%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20URL%20JDBC%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Usu%C3%A1rio%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Senha%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.configureConnection%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" x="-337" y="713">
+    <mutation name="{{cronapi.database.Operations.configureConnection}}" return-raw-type="cronapi.Var">
+      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Classe do driver"/>
+      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="URL JDBC"/>
+      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Usuário"/>
+      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Senha"/>
+    </mutation>
+    <value name="ARG0">
+      <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[,(qEq+^N{FFcS!uRB{#" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field customattributes="" name="TEXT">com.mysql.jdbc.Driver</field>
+      </shadow>
+    </value>
+    <value name="ARG1">
+      <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-[YfHP.#;Bw#yknbt?d]" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field customattributes="" name="TEXT">jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/doc?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false</field>
+      </shadow>
+    </value>
+    <value name="ARG2">
+      <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="U}*E!Es1(r%r;HBb`,J3" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field customattributes="" name="TEXT">usr_db_doc</field>
+      </shadow>
+    </value>
+    <value name="ARG3">
+      <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*~j!n%|-!FAz[jlHcW/E" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field customattributes="" name="TEXT">rjfe2Vm9yQWg3R8Y</field>
+      </shadow>
+    </value>
+  </block>
+</blockly>
