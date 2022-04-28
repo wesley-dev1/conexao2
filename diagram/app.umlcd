@@ -909,8 +909,8 @@
       "modelType": "Table",
       "name": "Carros",
       "position": {
-        "x": 38,
-        "y": 222
+        "x": 52,
+        "y": 234
       },
       "queries": [],
       "realName": "",
