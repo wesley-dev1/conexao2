@@ -31,17 +31,17 @@ public static Var ConexaoBanco(@ParamMetaData(description = "usuarioLogado") Var
         conexao =
         cronapi.database.Operations.configureConnection(
         Var.valueOf("com.mysql.jdbc.Driver"),
-        Var.valueOf("jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/IBase64?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
+        Var.valueOf("jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/doc?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
         Var.valueOf("usr_db_doc"),
         Var.valueOf("rjfe2Vm9yQWg3R8Y"));
     } else {
 
         conexao =
         cronapi.database.Operations.configureConnection(
-        Var.valueOf("org.postgresql.Driver"),
-        Var.valueOf("jdbc:postgresql://db-conexao52.cfdacj6pdovg.us-east-1.rds.amazonaws.com:5432/postgres?currentSchema=public&charSet=UTF-8"),
-        Var.valueOf("root"),
-        Var.valueOf("p32dda6a17c6c413e8a3e2d7ba622a"));
+        Var.valueOf("com.mysql.jdbc.Driver"),
+        Var.valueOf("jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/IBase64?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
+        Var.valueOf("usr_db_doc"),
+        Var.valueOf("rjfe2Vm9yQWg3R8Y"));
     }
     return conexao;
    }

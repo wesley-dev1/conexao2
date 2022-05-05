@@ -48,6 +48,13 @@ public class Carros implements Serializable {
         private java.lang.String modelo;
 
     /**
+    * @generated
+    */
+    @Column(name = "teste", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String teste;
+
+    /**
     * Construtor
     * @generated
     */
@@ -109,6 +116,25 @@ public class Carros implements Serializable {
     */
     public Carros setModelo(java.lang.String modelo){
         this.modelo = modelo;
+        return this;
+    }
+    /**
+    * Obtém teste
+    * return teste
+    * @generated
+    */
+    
+    public java.lang.String getTeste(){
+        return this.teste;
+    }
+
+    /**
+    * Define teste
+    * @param teste teste
+    * @generated
+    */
+    public Carros setTeste(java.lang.String teste){
+        this.teste = teste;
         return this;
     }
 

@@ -39,9 +39,9 @@ public static Var conexaoBanco(@ParamMetaData(description = "usuarioLogado") Var
         conexao =
         cronapi.database.Operations.configureConnection(
         Var.valueOf("com.mysql.jdbc.Driver"),
-        Var.valueOf("jdbc:mysql://db-conexao2.cfdacj6pdovg.us-east-1.rds.amazonaws.com:3306/db_conexao2?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
-        Var.valueOf("root"),
-        Var.valueOf("pbd7fcc2319cf43b589946575001db"));
+        Var.valueOf("jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/doc?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
+        Var.valueOf("usr_db_doc"),
+        Var.valueOf("rjfe2Vm9yQWg3R8Y"));
     }
     return conexao;
    }
